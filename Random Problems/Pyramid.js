@@ -1,14 +1,14 @@
 //Sol 1
 function Steps(n){
     for(let row=0; row<n; row++){
-        let stair='';
-        for(let col=0; col<n; col++){
+        let level='';
+        for(let col=0; col<((n*2)-1); col++){
             if(col<=row){
-                stair+="#";
+                level+="#";
             }else{
-                stair+=' ';
+                level+=' ';
             }
         }
-        console.log(stair);
+        console.log(level);
     }
 }
